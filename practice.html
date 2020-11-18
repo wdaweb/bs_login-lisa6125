@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
+  <style>
+    body {
+      background: url('./bg.jpg') no-repeat center/cover;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .container {
+      height: 100%;
+    }
+
+    .card {
+      background: #ffffff78;
+    }
+
+    .input-group-text {
+      background-color: transparent;
+      border: none;
+    }
+
+    #basic-addon1 {
+      background-color: #fff;
+    }
+
+    .form-control {
+      border: #fff 1px solid;
+    }
+
+    .card {
+      width: 75%;
+      border-radius: 20px;
+      min-width: 300px;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .form-control::placeholder {
+      color: rgb(218, 218, 218);
+    }
+
+    .bottom {
+      font-size: 8px;
+    }
+
+    .top {
+      font-size: 5rem;
+      position: absolute;
+      top: -15%;
+      left: 35%;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row">
+      <div class="col">
+        <i class="fas fa-user-circle top text-primary"></i>
+        <div class="card p-3">
+          <div class="card-body d-flex justify-content-center align-items-center flex-column">
+            <p>Sign in</p>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"> <i class="far fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Password" aria-label="Username"
+                aria-describedby="basic-addon1">
+            </div>
+            <button type="button" class="btn btn-primary btn-block">Login</button>
+            <div class="input-group text-white mb-3 bottom d-flex flex-row justify-content-between align-items-center">
+              <div class="input-group-prepend">
+                <div class="input-group-text  text-white p-0 mt-3" style="font-size: 8px;">
+                  <input type="checkbox" aria-label="Checkbox for following text input" class="mr-1">Remember
+                  me
+                </div>
+              </div>
+              <a href="#" class=" text-white align-self-end">Forget Password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+    <script src="./bootstrap.js"></script>
+</body>
+
+</html>
